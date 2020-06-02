@@ -3,34 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Web Studio</title>
   </head>
+
   <body>
     <!-- Шапка сайта -->
     <header>
       <!-- Навигация -->
       <nav>
-        <img src="images/logo.svg" alt="logo" />
+        <a href="/"
+          ><img class="logo-site" src="images/logo.svg" alt="logo"
+        /></a>
         <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="nav-studio"><a href="#">Студия</a></li>
+          <li class="nav-portfolio">
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav-contacts"><a href="#">Контакты</a></li>
         </ul>
         <address>
-          <img src="images/mail.svg" alt="mail" />
-          <a href="mailto:sclyarvlad@yandex.ru">sclyarvlad@yandex.ru</a>
-          <img src="images/phone.svg" alt="phone" />
-          <a href="tel:+380962553485">+38 096 255 34 85</a>
+          <img class="e-mail-svg" src="images/mail.svg" alt="mail" />
+          <a class="e-mail" href="mailto:sclyarvlad@yandex.ru"
+            >sclyarvlad@yandex.ru</a
+          >
+          <img class="phone-svg" src="images/phone.svg" alt="phone" />
+          <a class="phone" href="tel:+380962553485">+38 096 255 34 85</a>
         </address>
       </nav>
-      <!-- Конец навигации -->
-      <img src="images/headerimg.png" alt="headerimg" />
-      <button>Заказать услугу</button>
     </header>
     <!-- Конец шапки сайта -->
+    <!-- Конец навигации -->
+    <section>
+      <img class="header-img" src="images/headerimg.jpg" alt="headerimg" />
+      <div class="img-overlay"></div>
+      <div class="button-overlay"></div>
+      <a class="transfer-but" href="">Заказать услугу</a>
+      <h1 class="main-text">Эффективные решения для вашего бизнеса</h1>
+    </section>
     <main>
       <!-- Блок обязанностей -->
       <section>
+        <h2 class="hide-headers">Наши преимущества</h2>
         <ul>
           <li>
             <img src="images/antena.svg" alt="antenna" />
@@ -67,22 +89,21 @@
         </ul>
       </section>
       <!-- Конец блока обязанностей -->
-      <hr />
       <!-- Род деятельности -->
       <section>
         <h2>Чем мы занимаемся</h2>
         <ul>
           <li>
-            <a href="#"><img src="images/img.png" alt="computer" /></a>
             <p>Десктопные приложения</p>
+            <a href="#"><img src="images/img.jpg" alt="computer" /></a>
           </li>
           <li>
-            <a href="#"><img src="images/box.png" alt="smartphone" /></a>
             <p>Мобильные приложения</p>
+            <a href="#"><img src="images/box.jpg" alt="smartphone" /></a>
           </li>
           <li>
-            <a href="#"><img src="images/img2.png" alt="monitor" /></a>
             <p>Дизайнерские решения</p>
+            <a href="#"><img src="images/img2.jpg" alt="monitor" /></a>
           </li>
         </ul>
       </section>
@@ -92,8 +113,8 @@
         <h2>Наша команда</h2>
         <ul>
           <li>
-            <img src="images/john-smith.png" alt="john" />
-            <h4>John Smith</h4>
+            <img src="images/john-smith.jpg" alt="john" />
+            <h3>John Smith</h3>
             <p>Product Designer</p>
             <a
               href="https://www.instagram.com"
@@ -122,8 +143,8 @@
             /></a>
           </li>
           <li>
-            <img src="images/marta-stewart.png" alt="marta" />
-            <h4>Marta Stewart</h4>
+            <img src="images/marta-stewart.jpg" alt="marta" />
+            <h3>Marta Stewart</h3>
             <p>Frontend Developer</p>
             <a
               href="https://www.instagram.com"
@@ -155,38 +176,39 @@
             /></a>
           </li>
           <li>
-            <img src="images/robert-jakis.png" alt="robert" />
-            <h4>Robert Jakis</h4>
+            <img src="images/robert-jakis.jpg" alt="robert" />
+            <h3>Robert Jakis</h3>
             <p>Marketing</p>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <img src="images/instagram.svg" alt="instagram"
+            /></a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+              ><img src="images/twitter.svg" alt="twitter"
+            /></a>
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+              ><img src="images/facebook.svg" alt="facebook"
+            /></a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+              ><img src="images/linkedin.svg" alt="linkdein"
+            /></a>
           </li>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener nofollow noreferrer"
-          >
-            <img src="images/instagram.svg" alt="instagram"
-          /></a>
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener nofollow noreferrer"
-            ><img src="images/twitter.svg" alt="twitter"
-          /></a>
-          <a
-            href="https://facebook.com/"
-            target="_blank"
-            rel="noopener nofollow noreferrer"
-            ><img src="images/facebook.svg" alt="facebook"
-          /></a>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener nofollow noreferrer"
-            ><img src="images/linkedin.svg" alt="linkdein"
-          /></a>
           <li>
-            <img src="images/martin-doe.png" alt="martin" />
-            <h4>UI Designer</h4>
+            <img src="images/martin-doe.jpg" alt="martin" />
+            <h3>Martin Doe</h3>
+            <p>UI Designer</p>
             <a
               href="https://www.instagram.com"
               target="_blank"
@@ -244,14 +266,12 @@
     </main>
     <!-- Подвал -->
     <footer>
-      <img src="images/logo.svg" alt="logo" />
+      <a href="/"><img src="images/logo.svg" alt="logo" /></a>
       <address>
         г. Киев, пр-т Леси Украинки, 26 <br />
         <a href="mailto:sclyarvlad@yandex.ru">sclyarvlad@yandex.ru</a><br />
         <a href="tel:+380962553485">+38 096 255 34 85</a>
-      </address>
-      <section>
-        <h4>ПРИСОЕДИНЯЙТЕСЬ</h4>
+        <p>ПРИСОЕДИНЯЙТЕСЬ</p>
         <a
           href="https://www.instagram.com"
           target="_blank"
@@ -276,7 +296,7 @@
           rel="noopener nofollow noreferrer"
           ><img src="images/linkedin.svg" alt="linkdein"
         /></a>
-      </section>
+      </address>
       <p>2020 | Developed by GoIT Students</p>
     </footer>
     <!-- Конец подвала -->
